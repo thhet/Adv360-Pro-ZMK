@@ -11,7 +11,7 @@
 /* Include zmk-nodefree macros for convenience */
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/keypos_def/keypos_adv360.h"
-#include "../zmk-nodefree-config/international_chars/german_alt.dtsi"
+#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 /* layer and key shortcuts */
 #define ___ &trans
