@@ -31,49 +31,70 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-#define SHIFT_A (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A)))
-#define SHIFT_B (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_B)))
-#define SHIFT_C (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_C)))
-#define SHIFT_D (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D)))
-#define SHIFT_E (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
-#define SHIFT_F (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F)))
-#define SHIFT_G (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_G)))
-#define SHIFT_H (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H)))
-#define SHIFT_I (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I)))
-#define SHIFT_J (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_J)))
-#define SHIFT_K (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K)))
-#define SHIFT_L (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L)))
-#define SHIFT_M (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_M)))
-#define SHIFT_N (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N)))
-#define SHIFT_O (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_O)))
-#define SHIFT_P (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_P)))
-#define SHIFT_Q (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)))
-#define SHIFT_R (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_R)))
-#define SHIFT_S (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S)))
-#define SHIFT_T (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_T)))
-#define SHIFT_U (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_U)))
-#define SHIFT_V (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_V)))
-#define SHIFT_W (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W)))
-#define SHIFT_X (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_X)))
-#define SHIFT_Y (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))
-#define SHIFT_Z (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
+#define GER_Y (Z)
+#define GER_Z (Y)
+
+#define GERS_A (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A)))
+#define GERS_B (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_B)))
+#define GERS_C (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_C)))
+#define GERS_D (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_D)))
+#define GERS_E (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
+#define GERS_F (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_F)))
+#define GERS_G (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_G)))
+#define GERS_H (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_H)))
+#define GERS_I (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_I)))
+#define GERS_J (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_J)))
+#define GERS_K (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_K)))
+#define GERS_L (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_L)))
+#define GERS_M (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_M)))
+#define GERS_N (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_N)))
+#define GERS_O (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_O)))
+#define GERS_P (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_P)))
+#define GERS_Q (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)))
+#define GERS_R (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_R)))
+#define GERS_S (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S)))
+#define GERS_T (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_T)))
+#define GERS_U (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_U)))
+#define GERS_V (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_V)))
+#define GERS_W (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W)))
+#define GERS_X (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_X)))
+#define GERS_Y (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
+#define GERS_Z (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))
+
+#define GER_UA (SINGLE_QUOTE)
+#define GER_UU (LEFT_BRACKET)
+#define GER_UO (SEMICOLON)
+#define GER_SZ (MINUS)
+
+#define GERS_UA (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
+#define GERS_UU (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE)))
+#define GERS_UO (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON)))
+#define GERS_SZ (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE)))
+
+// Backtick dead key
+ZMK_BEHAVIOR(GER_BACKTICK, macro,
+    wait-ms = <100>;
+    tap-ms = <5>;
+    bindings = <&kp PLUS &kp SPACE>;
+)
+
 
 // Layer 0
 ZMK_LAYER(default_layer,
-        &kp ESC          &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0        &kp MINUS
-        &kp SINGLE_QUOTE &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp Z    &kp SEMICOLON &kp RIGHT_BRACKET
-        &kp TAB          &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I    &kp O         &kp SQT
-        &mo 1            &kp Y     &kp X    &kp C    &kp D      &kp V         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none          &kp K  &kp H  &kp COMMA &kp DOT  &kp FSLH      &mo 1
-        &kp LSHFT        &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &mo 2     &kp BSPC             &kp PG_DN &mo 2     &kp SPACE             &kp UP &kp DOWN  &none    &kp BSLH      &kp RSHFT
+        &kp ESC          &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9    &kp N0        &kp GER_SZ
+        &kp SINGLE_QUOTE &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y &GER_BACKTICK &kp GER_UU
+        &kp TAB          &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I     &kp O         &kp GER_OO
+        &mo 1            &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none          &kp K  &kp H  &kp COMMA &kp DOT   &kp FSLH      &mo 1
+        &kp LSHFT        &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &mo 2     &kp BSPC             &kp PG_DN &mo 2     &kp SPACE             &kp UP &kp DOWN  &none     &kp BSLH      &kp RSHFT
 )
 
 // Layer 1
 ZMK_LAYER(shift_layer,
-        &kp EQUAL &kp N1      &kp N2      &kp N3      &kp N4      &kp N5 &trans                                                                                &mo 3 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp SHIFT_Q &kp SHIFT_W &kp SHIFT_F &kp SHIFT_P &kp SHIFT_B &none                                                                            &none &kp SHIFT_J &kp SHIFT_L &kp SHIFT_U &kp SHIFT_Z   &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp SHIFT_A &kp SHIFT_R &kp SHIFT_S &kp SHIFT_T &kp SHIFT_G &none              &kp LCTRL &kp LALT &none     &none     &kp LGUI  &kp RCTRL    &none &kp SHIFT_M &kp SHIFT_N &kp SHIFT_E &kp SHIFT_O   &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp SHIFT_Y &kp SHIFT_X &kp SHIFT_C &kp SHIFT_D &kp SHIFT_V &none    &none     &kp HOME &none     &none     &kp PG_UP &none     &none              &kp SHIFT_K &kp SHIFT_H &kp KP_N2   &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE   &kp CAPS    &kp LEFT    &kp RIGHT               &kp BSPC &kp DEL   &kp END            &kp PG_DN &kp ENTER &kp KP_N0                                &kp UP      &kp DOWN    &kp KP_DOT    &kp RBKT        &mo 2
+        &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5 &trans                                                                                    &mo 3 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp GER_SZ
+        &kp GERS_UA &kp GERS_Q &kp GERS_W &kp GERS_F &kp GERS_P &kp GERS_B &none                                                                                     &none &kp GERS_J &kp GERS_L &kp GERS_U   &kp GERS_Z    &kp KP_MINUS    &kp GERS_UU
+        &kp ESC     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp LCTRL &kp LALT &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_O    &kp KP_PLUS     &kp GERS_OO
+        &kp LSHFT   &kp GERS_Y &kp GERS_X &kp GERS_C &kp GERS_D &kp GERS_V          &none    &none     &kp HOME &none     &none     &kp PG_UP  &none      &none            &kp GERS_K &kp GERS_H   &kp KP_N2  &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+        &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT                      &kp BSPC &kp DEL   &kp END                      &kp PG_DN  &trans     &kp SPACE                   &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
 )
 
 // Layer 2
