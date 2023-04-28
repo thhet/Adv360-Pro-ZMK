@@ -81,18 +81,18 @@ ZMK_BEHAVIOR(GER_BACKTICK, macro,
 
 // Layer 0
 ZMK_LAYER(default_layer,
-        &kp ESC          &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9    &kp N0        &kp GER_SZ
-        &kp SINGLE_QUOTE &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y &trans        &kp GER_UU
-        &kp TAB          &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I     &kp O         &kp GER_OO
-        &mo 1            &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none          &kp K  &kp H  &kp COMMA &kp DOT   &kp FSLH      &mo 1
-        &kp LSHFT        &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &mo 2     &kp BSPC             &kp PG_DN &mo 2     &kp SPACE             &kp UP &kp DOWN  &none     &kp BSLH      &kp RSHFT
+        &kp ESC      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9    &kp N0        &kp GER_SZ
+        &kp GET_UA   &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y &GER_BACKTICK &kp GER_UU
+        &kp TAB      &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I     &kp O         &kp GER_UO
+        &mo 1        &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none          &kp K  &kp H  &kp COMMA &kp DOT   &kp FSLH      &mo 1
+        &kp LSHFT    &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &mo 2     &kp BSPC             &kp PG_DN &mo 2     &kp SPACE             &kp UP &kp DOWN  &none     &kp BSLH      &kp RSHFT
 )
 
 // Layer 1
 ZMK_LAYER(shift_layer,
         &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5 &trans                                                                                    &mo 3 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp GER_SZ
         &kp GERS_UA &kp GERS_Q &kp GERS_W &kp GERS_F &kp GERS_P &kp GERS_B &none                                                                                     &none &kp GERS_J &kp GERS_L &kp GERS_U   &kp GERS_Z    &kp KP_MINUS    &kp GERS_UU
-        &kp ESC     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp LCTRL &kp LALT &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_O    &kp KP_PLUS     &kp GERS_OO
+        &kp ESC     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp LCTRL &kp LALT &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_O    &kp KP_PLUS     &kp GERS_UO
         &kp LSHFT   &kp GERS_Y &kp GERS_X &kp GERS_C &kp GERS_D &kp GERS_V          &none    &none     &kp HOME &none     &none     &kp PG_UP  &none      &none            &kp GERS_K &kp GERS_H   &kp KP_N2  &kp KP_N3     &kp KP_ENTER    &kp RSHFT
         &mo 2       &kp GRAVE  &kp CAPS   &kp LEFT   &kp RIGHT                      &kp BSPC &kp DEL   &kp END                      &kp PG_DN  &trans     &kp SPACE                   &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
 )
