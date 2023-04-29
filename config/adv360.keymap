@@ -100,6 +100,12 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 // German -
 #define GER_MINUS (SLASH)
 
+// German +
+#define GER_PLUS (RBKT)
+
+// German *
+#define GER_STAR (RBRC)
+
 // German /
 #define GER_SLASH (AMPERSAND)
 
@@ -142,11 +148,11 @@ ZMK_LAYER(shift_layer,
 
 // Layer 2
 ZMK_LAYER(symbol_layer,
-        &kp F1 &kp F2          &kp F3        &kp F4          &kp F5 &kp F6  &tog 1                                                      &mo 3 &kp F7 &kp F8 &kp F9          &kp F10 &kp F11         &kp F12
-        &trans &kp SQT         &kp LT        &trans          &trans &trans  &none                                                       &none &trans &trans &trans          &trans  &trans          &trans
-        &trans &kp EXCLAMATION &kp MINUS     &trans          &trans &trans  &none        &trans &trans &none &none &trans &trans        &none &trans &trans &trans          &trans  &trans          &trans
-        &trans &kp CARET       &kp SLASH     &trans          &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans          &trans  &trans          &trans
-        &trans &trans          &trans        &trans          &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans          &trans  &trans          &trans
+        &kp F1 &kp F2          &kp F3        &kp F4       &kp F5 &kp F6  &tog 1                                                      &mo 3 &kp F7 &kp F8 &kp F9          &kp F10 &kp F11         &kp F12
+        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &trans &trans  &none                                                       &none &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &trans &trans  &none        &trans &trans &none &none &trans &trans        &none &trans &trans &trans          &trans  &trans          &trans
+        &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans          &trans  &trans          &trans
+        &trans &trans          &trans        &trans       &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans          &trans  &trans          &trans
 )
 
 // Layer 3
