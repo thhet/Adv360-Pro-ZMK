@@ -31,8 +31,8 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-#define GER_Y (Z)
-#define GER_Z (Y)
+#define GER_Y (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))
+#define GER_Z (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))
 
 #define GERS_A (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_A)))
 #define GERS_B (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_B)))
@@ -94,8 +94,18 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 // German <
 #define GER_LT (BSLH)
 
+// German >
+#define GER_GT (PIPE)
+
 // German -
 #define GER_MINUS (SLASH)
+
+// German /
+#define GER_SLASH (AMPERSAND)
+
+// German _
+#define GER_UNDER (QUESTION)
+
 
 // Backtick (`) dead key
 ZMK_BEHAVIOR(GER_BACKTICK, macro,
@@ -115,7 +125,7 @@ ZMK_BEHAVIOR(GER_CARET, macro,
 // Layer 0
 ZMK_LAYER(default_layer,
         &kp ESC      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9       &kp N0          &kp GER_SZ
-        &kp GER_UA   &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y    &GER_BACKTICK   &kp GER_UU
+        &kp GER_UA   &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y    &kp GER_UNDER   &kp GER_UU
         &kp TAB      &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I        &kp O           &kp GER_UO
         &mo 1        &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp HOME &none &none &kp PG_UP &none     &none          &kp K  &kp H  &kp COMMA &kp DOT      &kp GER_SEMI    &mo 1
         &kp LSHFT    &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &mo 2     &kp BSPC             &kp PG_DN &mo 2     &kp SPACE             &kp UP &kp DOWN  &kp GER_PARA &kp PRINTSCREEN &kp RSHFT
@@ -133,9 +143,9 @@ ZMK_LAYER(shift_layer,
 // Layer 2
 ZMK_LAYER(symbol_layer,
         &kp F1 &kp F2          &kp F3        &kp F4          &kp F5 &kp F6  &tog 1                                                      &mo 3 &kp F7 &kp F8 &kp F9          &kp F10 &kp F11         &kp F12
-        &trans &kp GER_SQT     &kp GER_LT    &trans          &trans &trans  &none                                                       &none &trans &trans &trans          &trans  &trans          &trans
-        &trans &kp EXCLAMATION &kp GER_MINUS &trans          &trans &trans  &none        &trans &trans &none &none &trans &trans        &none &trans &trans &trans          &trans  &trans          &trans
-        &trans &GER_CARET      &trans        &trans          &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp SQT         &kp LT        &trans          &trans &trans  &none                                                       &none &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp EXCLAMATION &kp MINUS     &trans          &trans &trans  &none        &trans &trans &none &none &trans &trans        &none &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp CARET       &kp SLASH     &trans          &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans          &trans  &trans          &trans
         &trans &trans          &trans        &trans          &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans          &trans  &trans          &trans
 )
 
