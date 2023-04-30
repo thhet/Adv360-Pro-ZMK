@@ -130,6 +130,40 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 /* German & */
 #define GER_AMPS (CARET)
 
+/* German € */
+#define GER_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
+
+/* German | */
+#define GER_PIPE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE)))
+
+/* German ~ */
+#define GER_TILDE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))
+
+/* German : */
+#define GER_COLON (LT)
+
+/* German $ */
+#define GER_DOLLAR (DOLLAR) 
+
+/* German [ */
+#define GER_LBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK)))
+
+/* German ] */
+#define GER_RBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS)))
+
+/* German ( */
+#define GER_LPAR (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK))) 
+
+/* German ) */
+#define GER_RPAR (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))) 
+
+/* German { */
+#define GER_LBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_7_AND_AMPERSAND)))
+
+/* German } */
+#define GER_RBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_0_AND_RIGHT_PARENTHESIS)))
+
+
 // Backtick (`) dead key
 ZMK_BEHAVIOR(GER_BACKTICK, macro,
     wait-ms = <100>;
@@ -165,11 +199,11 @@ ZMK_LAYER(shift_layer,
 
 // Layer 2
 ZMK_LAYER(symbol_layer,
-        &kp F1 &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                      &mo 3  &kp F7       &kp F8 &kp F9          &kp F10 &kp F11         &kp F12
-        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_DOT   &none                                                       &none  &kp GER_AMPS &trans &trans          &trans  &trans          &trans
-        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &trans &trans &none &none &trans &trans        &none  &trans       &trans &trans          &trans  &trans          &trans
-        &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK &none  &none  &trans &none &none &trans &none  &none               &trans       &trans &trans          &trans  &trans          &trans
-        &trans &trans          &trans        &trans       &trans                             &trans &trans &trans             &trans &trans &trans                    &trans &trans          &trans  &trans          &trans
+        &kp F1 &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                      &mo 3  &kp F7        &kp F8         &kp F9          &kp F10       &kp F11         &kp F12
+        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_DOT   &none                                                       &none  &kp GER_AMPS  &kp GER_EURO   &kp GER_LBKT    &kp GER_RBKT  &trans          &trans
+        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &trans &trans &none &none &trans &trans        &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &trans          &trans
+        &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK &none  &none  &trans &none &none &trans &none  &none               &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &trans          &trans
+        &trans &trans          &trans        &trans       &trans                             &trans &trans &trans             &trans &trans &trans                     &trans         &trans          &trans        &trans          &trans
 )
 
 // Layer 3
