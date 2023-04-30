@@ -116,7 +116,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 #define GER_DQT (AT)
 
 // German =
-#define GER_EQAL (LPAR)
+#define GER_EQUAL (LPAR)
 
 // German \
 #define GER_BSLH (NON_US_BSLH)
