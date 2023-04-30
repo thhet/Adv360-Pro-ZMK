@@ -61,70 +61,70 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 #define GERS_Y (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
 #define GERS_Z (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))
 
-// German ä
+/* German ä */
 #define GER_UA (SINGLE_QUOTE)
 
-// German ü
+/* German ü */
 #define GER_UU (LEFT_BRACKET)
 
-// German ö
+/* German ö */
 #define GER_UO (SEMICOLON)
 
-// German ß
+/* German ß */
 #define GER_SZ (MINUS)
 
-// German Ä
+/* German Ä */
 #define GERS_UA (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z)))
 
-// German Ü
+/* German Ü */
 #define GERS_UU (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE)))
 
-// German Ö
+/* German Ö */
 #define GERS_UO (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON)))
 
-// German ;
+/* German ; */
 #define GER_SEMI (LESS_THAN)
 
-// German §
+/* German § */
 #define GER_PARA (HASH)
 
-// German ' 
+/* German ' */
 #define GER_SQT (PIPE)
 
-// German <
+/* German < */
 #define GER_LT (BSLH)
 
-// German >
+/* German > */
 #define GER_GT (PIPE)
 
-// German -
+/* German - */
 #define GER_MINUS (SLASH)
 
-// German +
+// German + */
 #define GER_PLUS (RBKT)
 
-// German *
+/* German * (star) */
 #define GER_STAR (RBRC)
 
-// German /
+/* German / */
 #define GER_SLASH (AMPERSAND)
 
-// German _
+/* German _ */
 #define GER_UNDER (QUESTION)
 
-// German "
+/* German " */
 #define GER_DQT (AT)
 
-// German =
+/* German = */
 #define GER_EQUAL (LPAR)
 
-// German \
+/* German \ */
 #define GER_BSLH (NON_US_BSLH)
 
-// German .
+/* German . */
 #define GER_DOT (DOT)
 
-// German #
+/* German # */
 #define GER_HASH (BSLH)
 
 
@@ -164,9 +164,9 @@ ZMK_LAYER(shift_layer,
 // Layer 2
 ZMK_LAYER(symbol_layer,
         &kp F1 &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                      &mo 3  &kp F7 &kp F8 &kp F9          &kp F10 &kp F11         &kp F12
-        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &trans   &trans   &none                                                       &none  &trans &trans &trans          &trans  &trans          &trans
-        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &trans &trans  &none        &trans &trans &none &none &trans &trans        &none  &trans &trans &trans          &trans  &trans          &trans
-        &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &trans  &trans &none  &none  &trans &none &none &trans &none  &none               &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &trans        &kp GER_DOT   &none                                                       &none  &trans &trans &trans          &trans  &trans          &trans
+        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &trans        &kp GER_HASH  &none        &trans &trans &none &none &trans &trans        &none  &trans &trans &trans          &trans  &trans          &trans
+        &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &trans        &GER_BACKTICK &none  &none  &trans &none &none &trans &none  &none               &trans &trans &trans          &trans  &trans          &trans
         &trans &trans          &trans        &trans       &trans                             &trans &trans &trans             &trans &trans &trans              &trans &trans          &trans  &trans          &trans
 )
 
