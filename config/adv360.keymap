@@ -200,7 +200,7 @@ ZMK_LAYER(default_layer,
 ZMK_LAYER(shift_layer,
         &kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans                                                                                    &mo 3 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp GER_SZ
         &kp GERS_UA &kp GERS_Q &kp GERS_W &kp GERS_F &kp GERS_P &kp GERS_B &none                                                                                     &none &kp GERS_J &kp GERS_L &kp GERS_U   &kp GERS_Y    &kp KP_MINUS    &kp GERS_UU
-        &kp TAB     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp LCTRL &kp LALT &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_O    &kp KP_PLUS     &kp GERS_UO
+        &kp TAB     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp LCTRL &kp LALT &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_I    &kp GERS_O      &kp GERS_UO
         &kp LSHFT   &kp GERS_Z &kp GERS_X &kp GERS_C &kp GERS_D &kp GERS_V          &none    &none     &kp HOME &none     &none     &kp PG_UP  &none      &none            &kp GERS_K &kp GERS_H &trans       &trans        &trans          &trans
         &trans      &trans     &trans     &kp LEFT   &kp RIGHT                      &kp BSPC &kp DEL   &kp END                      &kp PG_DN  &trans     &kp SPACE                   &kp UP     &kp DOWN     &trans        &trans          &trans
 )
