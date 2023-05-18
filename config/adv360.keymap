@@ -140,7 +140,7 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 #define GER_TILDE (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_RIGHT_BRACKET_AND_RIGHT_BRACE)))
 
 /* German : */
-#define GER_COLON (LT)
+#define GER_COLON (GT)
 
 /* German $ */
 #define GER_DOLLAR (DOLLAR) 
