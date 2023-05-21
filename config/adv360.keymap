@@ -204,24 +204,24 @@ ZMK_LAYER(default_layer,
         &kp ESC      &kp N1       &kp N2      &kp N3       &kp N4        &kp N5 &tog 1                                                                       &mo 4 &kp N6 &kp N7        &kp N8         &kp N9          &kp N0          &kp GER_SZ
         &kp GER_UA   &kp Q        &kp W       &kp F        &kp P         &kp B  &none                                                                        &none &kp J  &kp L         &kp U          &kp GER_Y       &kp GER_UNDER   &kp GER_UU
         &kp TAB      &kp A        &kp R       &kp S        &kp T         &kp G  &none            &kp LCTRL &kp DEL   &none &none &kp LGUI  &kp RCTRL         &none &kp M  &kp N         &kp E          &kp I           &kp O           &kp GER_UO
-        &kp LSHFT    &kp GER_Z    &kp X       &kp C        &kp D         &kp V         &none     &none     &kp RALT  &none &none &kp LALT  &none     &none         &kp K  &kp H         &kp COMMA      &kp DOT         &kp GER_SEMI    &kp RSHFT
+        &kp LSHFT    &kp GER_Z    &kp X       &kp C        &kp D         &kp V         &none     &none     &kp RALT  &none &none &kp RALT  &none     &none         &kp K  &kp H         &kp COMMA      &kp DOT         &kp GER_SEMI    &kp RSHFT
         &kp LCTRL    &kp GER_UNDO &kp GER_CUT &kp GER_COPY &kp GER_PASTE               &kp SPACE &mo 3     &kp BSPC              &mo 2     &mo 1     &kp RETURN           &none         &none          &kp PRINTSCREEN &kp GER_REDO    &kp RCTRL
 )
 
 // Layer 1 - Shift
 ZMK_LAYER(shift_layer,
-        &kp ESC     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &trans                                                                                    &mo 4 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp GER_SZ
-        &kp GERS_UA &kp GERS_Q &kp GERS_W &kp GERS_F &kp GERS_P &kp GERS_B &none                                                                                     &none &kp GERS_J &kp GERS_L &kp GERS_U   &kp GERS_Y    &kp KP_MINUS    &kp GERS_UU
-        &kp TAB     &kp GERS_A &kp GERS_R &kp GERS_S &kp GERS_T &kp GERS_G &none             &kp COPY  &kp PASTE &none     &none     &kp LGUI   &kp RCTRL             &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_I    &kp GERS_O      &kp GERS_UO
-        &kp LSHFT   &kp GERS_Z &kp GERS_X &kp GERS_C &kp GERS_D &kp GERS_V          &none    &none     &kp HOME  &none     &none     &kp PG_UP  &none      &none            &kp GERS_K &kp GERS_H &trans       &trans        &trans          &trans
-        &trans      &trans     &trans     &kp LEFT   &kp RIGHT                      &kp BSPC &kp DEL   &kp END                       &kp PG_DN  &trans     &kp SPACE                   &kp UP     &kp DOWN     &trans        &trans          &trans
+        &kp ESC     &kp N1       &kp N2      &kp N3       &kp N4     &kp N5     &trans                                                                                     &mo 4 &kp N6     &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp GER_SZ
+        &kp GERS_UA &kp GERS_Q   &kp GERS_W  &kp GERS_F   &kp GERS_P &kp GERS_B &none                                                                                      &none &kp GERS_J &kp GERS_L &kp GERS_U   &kp GERS_Y    &kp KP_MINUS    &kp GERS_UU
+        &kp TAB     &kp GERS_A   &kp GERS_R  &kp GERS_S   &kp GERS_T &kp GERS_G &none              &kp LCTRL &kp DEL   &none     &none     &kp RGUI   &kp RCTRL            &none &kp GERS_M &kp GERS_N &kp GERS_E   &kp GERS_I    &kp GERS_O      &kp GERS_UO
+        &kp LSHFT   &kp GERS_Z   &kp GERS_X  &kp GERS_C   &kp GERS_D &kp GERS_V          &none     &none     &kp HOME  &none     &none     &kp RALT   &none      &none           &kp GERS_K &kp GERS_H &trans       &trans        &trans          &trans
+        &kp LCTRL   &kp GER_UNDO &kp GER_CUT &kp GER_COPY &kp GER_PASTE                  &kp SPACE &mo 3     &kp BSPC                      &mo 2      &trans     &kp RETURN                 &kp UP     &kp DOWN     &trans        &trans          &trans
 )
 
 // Layer 2 - Symbol
 ZMK_LAYER(symbol_layer,
         &kp F1 &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                      &mo 4  &kp F7        &kp F8         &kp F9          &kp F10       &kp F11          &kp F12
         &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_PARA  &none                                                       &none  &kp GER_AMPS  &kp GER_EURO   &kp GER_LBKT    &kp GER_RBKT  &kp GER_PERCENT  &trans
-        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &trans &trans &none &none &trans &trans        &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
+        &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none         &trans &trans &none &none &trans &trans       &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
         &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK &none  &none  &trans &none &none &trans &none  &none               &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &kp GER_AT       &trans
         &trans &trans          &trans        &trans       &trans                             &trans &trans &trans             &trans &trans &trans                     &trans         &trans          &trans        &trans           &trans
 )
