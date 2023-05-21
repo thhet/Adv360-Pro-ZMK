@@ -175,10 +175,14 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
 #define COPY (LC(C)) 
 #define PASTE (LC(V)) 
+#define UNDO (LC(Z)) 
+#define REDO (LC(Y)) 
+#define CUT (LC(X)) 
 
 #define WORD_LEFT (LC(LEFT)) 
 #define WORD_RIGHT (LC(RIGHT)) 
-
+#define DESK_LEFT (LGUI(LC(LEFT))) 
+#define DESK_RIGHT (LGUI(LC(RIGHT))) 
 
 // Backtick (`) dead key
 ZMK_BEHAVIOR(GER_BACKTICK, macro,
@@ -197,11 +201,11 @@ ZMK_BEHAVIOR(GER_CARET, macro,
 
 // Layer 0 - Regular
 ZMK_LAYER(default_layer,
-        &kp ESC      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 4 &kp N6 &kp N7 &kp N8    &kp N9       &kp N0          &kp GER_SZ
-        &kp GER_UA   &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L  &kp U     &kp GER_Y    &kp GER_UNDER   &kp GER_UU
-        &kp TAB      &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp COPY  &kp PASTE &none &none &kp LGUI  &kp RCTRL          &none &kp M  &kp N  &kp E     &kp I        &kp O           &kp GER_UO
-        &kp LSHFT    &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp DEL   &none &none &kp LALT  &none     &none          &kp K  &kp H  &kp COMMA &kp DOT      &kp GER_SEMI    &mo RSHFT
-        &kp LCTRL    &kp HOME  &kp END  &kp LEFT &kp RIGHT                &kp SPACE &kp BSPC  &mo 3                 &mo 2     &mo 1     &kp RETURN            &kp UP &kp DOWN  &kp GER_PARA &kp PRINTSCREEN &kp RCTRL
+        &kp ESC      &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 4 &kp N6 &kp N7        &kp N8         &kp N9          &kp N0          &kp GER_SZ
+        &kp GER_UA   &kp Q     &kp W    &kp F    &kp P      &kp B  &none                                                                        &none &kp J  &kp L         &kp U          &kp GER_Y       &kp GER_UNDER   &kp GER_UU
+        &kp TAB      &kp A     &kp R    &kp S    &kp T      &kp G  &none            &kp LCTRL &kp DEL   &none &none &kp LGUI  &kp RCTRL         &none &kp M  &kp N         &kp E          &kp I           &kp O           &kp GER_UO
+        &kp LSHFT    &kp GER_Z &kp X    &kp C    &kp D      &kp V         &none     &none     &kp RALT  &none &none &kp LALT  &none     &none         &kp K  &kp H         &kp COMMA      &kp DOT         &kp GER_SEMI    &kp RSHFT
+        &kp LCTRL    &kp UNDO  &kp CUT  &kp COPY &kp PASTE                &kp SPACE &mo 3     &kp BSPC              &mo 2     &mo 1     &kp RETURN           &kp DESK_LEFT &kp DESK_RIGHT &kp PRINTSCREEN &kp REDO        &kp RCTRL
 )
 
 // Layer 1 - Shift
@@ -216,7 +220,7 @@ ZMK_LAYER(shift_layer,
 // Layer 2 - Symbol
 ZMK_LAYER(symbol_layer,
         &kp F1 &kp F2          &kp F3        &kp F4       &kp F5        &kp F6        &tog 1                                                      &mo 4  &kp F7        &kp F8         &kp F9          &kp F10       &kp F11          &kp F12
-        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_DOT   &none                                                       &none  &kp GER_AMPS  &kp GER_EURO   &kp GER_LBKT    &kp GER_RBKT  &kp GER_PERCENT  &trans
+        &trans &kp GER_SQT     &kp GER_LT    &kp GER_GT   &kp GER_DQT   &kp GER_PARA  &none                                                       &none  &kp GER_AMPS  &kp GER_EURO   &kp GER_LBKT    &kp GER_RBKT  &kp GER_PERCENT  &trans
         &trans &kp EXCLAMATION &kp GER_MINUS &kp GER_PLUS &kp GER_EQUAL &kp GER_HASH  &none        &trans &trans &none &none &trans &trans        &none  &kp GER_PIPE  &kp GER_COLON  &kp GER_LPAR    &kp GER_RPAR  &kp GER_QUESTION &trans
         &trans &GER_CARET      &kp GER_SLASH &kp GER_STAR &kp GER_BSLH  &GER_BACKTICK &none  &none  &trans &none &none &trans &none  &none               &kp GER_TILDE &kp GER_DOLLAR &kp GER_LBRC    &kp GER_RBRC  &kp GER_AT       &trans
         &trans &trans          &trans        &trans       &trans                             &trans &trans &trans             &trans &trans &trans                     &trans         &trans          &trans        &trans           &trans
@@ -224,11 +228,11 @@ ZMK_LAYER(symbol_layer,
 
 // Layer 3 - Function
 ZMK_LAYER(fn_layer,
-        &kp F1 &kp F2      &kp F3       &kp F4       &kp F5       &kp F6       &tog 1                                                                                                         &mo 4                  &kp F7       &kp F8        &kp F9       &kp F10      &kp F11        &kp F12
-        &none  &none       &none        &none        &none        &none        &none                                                                                                          &none                  &none        &none         &kp UP       &none        &none          &none
-        &none  &none       &none        &none        &none        &none        &none                                  &none      &none      &none &none &none      &none                      &none                  &none        &kp WORD_LEFT &kp LEFT     &kp RIGHT    &kp WORD_RIGHT &none
-        &none  &none       &none        &none        &none        &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none         &kp DOWN     &none        &none          &none
-        &none  &none       &none        &none        &none                                            &none           &none      &none                  &none      &none      &none                                               &none         &none        &none        &none          &none
+        &kp F1 &kp F2        &kp F3       &kp F4       &kp F5         &kp F6       &tog 1                                                                                                         &mo 4                  &kp F7        &kp F8        &kp F9       &kp F10        &kp F11        &kp F12
+        &none  &none         &kp HOME     &kp UP       &kp END        &none        &none                                                                                                          &none                  &none         &kp N7        &kp N8       &kp N9         &none          &none
+        &none  &kp WORD_LEFT &kp LEFT     &kp RIGHT    &kp WORD_RIGHT &none        &none                                  &none      &none      &none &none &none      &none                      &none                  &none         &kp N4        &kp N5       &kp N6         &none          &none
+        &none  &none         &none        &kp DOWN     &none          &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none         &kp N1        &kp N2       &kp N3         &none          &none
+        &none  &none         &none        &none        &none                                              &none           &none      &none                  &none      &none      &none                                                &none         &none        &none          &none          &none
 )
 
 // Layer 4 - Mod
